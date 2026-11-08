@@ -1,0 +1,20 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Независимый чекер адресов (инцидент Keplr / Web3Auth)</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://*.publicnode.com https://public-celestia-lcd.numia.xyz https://noble-api.polkachu.com https://main.api.agoric.net; style-src 'self' 'unsafe-inline'; img-src 'self' data:">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="wrap"><h1 data-i="title"></h1><button id="lang" type="button">EN</button></div></header>
+<main class="wrap">
+<div class="warn" data-i="disclaimer"></div>
+<section class="card"><h2 data-i="h_check"></h2>
+<label for="addr" data-i="addr_label"></label>
+<input id="addr" autocomplete="off" spellcheck="false" placeholder="cosmos1… / osmo1… / inj1… / 0x…">
+<label class="chk"><input type="checkbox" id="related" checked> <span data-i="related"></span></label>
+<button id="go" type="button" data-i="go"></button>
+<p class="small" data-i="privacy"></p>
+<div id="out" aria-live="polite"></div></section>
+<section class="card"><h2 data-i="h_paste"></h2><p data-i="paste_help"></p>
+<textarea id="paste" rows="6" spellcheck="false"></textarea><button id="pgo" type="button" data-i="pgo"></button><div id="pout"></div></section>
+<section class="card"><h2 data-i="h_list"></h2><p data-i="list_note"></p><div id="list"></div></section>
+<section class="card"><h2 data-i="h_how"></h2><div data-i="how"></div></section>
+</main><footer class="wrap small" data-i="footer"></footer>
+<script src="bech32.js"></script><script src="checker.js"></script><script src="i18n.js"></script><script src="app.js"></script></body></html>
